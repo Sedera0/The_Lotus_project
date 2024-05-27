@@ -1,8 +1,79 @@
-:root{
+:root {
         --primary-color: #f46cfc;
         --secondary-color: #74bc44;
         --tertiary-color: #a6d284;
         --quaternary-color: #945bfc;
         --white: #ffffff;
         --black: #000000;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background-color: rgba(33, 54, 59, 0.754);
+        padding: 0 30rem;
+}
+
+.navbar div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        color: rgb(233, 233, 233);
+}
+
+.navbar h2{
+        font-weight: 300;
+        text-align: center;
+        margin-top: 0.1rem;
+        font-size: 1.2rem;
+}
+
+.navbar .fa-solid{
+        font-size: 1.2rem;
+}
+
+.navbar div:hover{
+        color: rgba(37, 53, 56, 0.881);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+}
+
+header{
+        height: 100vh;
+        width: auto;
+        background-image: url('../images/couverture/light/light\ couverture\ 1.jpg');
+        background-size: cover;
+        overflow: hidden;
+}
+
+.head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1.5rem 5rem;
+        align-items: center;
+}
+
+.head i{
+        font-size: 1.2rem;
+        color: rgb(214, 214, 214);
+}
+
+.head i:hover{
+        cursor: pointer;
+}
+
+.logo{
+        width: 7rem;
 }

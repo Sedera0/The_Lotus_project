@@ -8,6 +8,6 @@
 
 <i class="fa-solid fa-bed"></i> icone pour Bungalow
 <i class="fa-solid fa-utensils"></i> icone pour plat
-<i class="fa-solid fa-address-book"></i> icone pour contact
 <i class="fa-solid fa-circle-exclamation"></i> icone pour about
+<i class="fa-solid fa-address-book"></i> icone pour contact
 
