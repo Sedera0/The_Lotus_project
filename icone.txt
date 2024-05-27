@@ -1,0 +1,13 @@
+<i class="fa-brands fa-facebook-f"></i> icone facebook
+<i class="fa-brands fa-instagram"></i> icone instagram
+<i class="fa-brands fa-twitter"></i> icone twitter
+<i class="fa-brands fa-whatsapp"></i> icone whatsapp
+
+<i class="fa-solid fa-bars"></i> icone menu
+<i class="fa-solid fa-xmark"></i> icone fermer
+
+<i class="fa-solid fa-bed"></i> icone pour Bungalow
+<i class="fa-solid fa-utensils"></i> icone pour plat
+<i class="fa-solid fa-address-book"></i> icone pour contact
+<i class="fa-solid fa-circle-exclamation"></i> icone pour about
+
