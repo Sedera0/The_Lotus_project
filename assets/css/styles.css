@@ -11,69 +11,74 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: "Montserrat Alternates", sans-serif;
 }
 
-.navbar{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        background-color: rgba(33, 54, 59, 0.754);
-        padding: 0 30rem;
-}
-
-.navbar div{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0.5rem;
-        padding: 1rem;
-        color: rgb(233, 233, 233);
-}
-
-.navbar h2{
-        font-weight: 300;
-        text-align: center;
-        margin-top: 0.1rem;
-        font-size: 1.2rem;
-}
-
-.navbar .fa-solid{
-        font-size: 1.2rem;
-}
-
-.navbar div:hover{
-        color: rgba(37, 53, 56, 0.881);
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
+html{
+        scroll-behavior: smooth;
 }
 
 header{
-        height: 100vh;
-        width: auto;
-        background-image: url('../images/couverture/light/light\ couverture\ 1.jpg');
+        background-image: url('../images/couverture/light/light\ couverture\ 2.jpg');
+        background-repeat: no-repeat;
         background-size: cover;
-        overflow: hidden;
+        height: 100vh;
 }
 
-.head{
+.nav_container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin: 1.5rem 5rem;
         align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0.5rem;
+        position: fixed;
 }
 
-.head i{
-        font-size: 1.2rem;
-        color: rgb(214, 214, 214);
+.nav_list{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        margin-left: 17rem;
 }
 
-.head i:hover{
-        cursor: pointer;
+.nav_item{
+        transition: 0.5s ease-in-out;
+}
+
+.nav_item:hover{
+        letter-spacing: 0.1rem;
 }
 
 .logo{
-        width: 7rem;
+        width: 6rem;
+        margin-left: 7rem;
+}
+
+ul{
+        list-style: none;
+        font-size: 1.1rem;
+}
+
+a{
+        text-decoration: none;
+        color: white;
+}
+
+img{
+        max-width: 100%;
+        height: auto;
+}
+
+i{
+        color: white;
+        font-size: 1.1rem;
+}
+
+i:hover{
+        cursor: pointer;
+}
+
+.fa-moon{
+        margin-right: 7.5rem;
 }

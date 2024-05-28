@@ -11,3 +11,6 @@
 <i class="fa-solid fa-circle-exclamation"></i> icone pour about
 <i class="fa-solid fa-address-book"></i> icone pour contact
 
+<i class="fa-regular fa-moon"></i> icone pour dark mode
+<i class="fa-regular fa-sun"></i> icone pour light mode
+
