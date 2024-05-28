@@ -18,6 +18,11 @@ html {
         scroll-behavior: smooth;
 }
 
+body {
+        overflow-x: hidden;
+}
+
+
 header {
         background-image: url('../images/couverture/light/light\ couverture\ 4.jpg');
         background-repeat: no-repeat;
@@ -29,10 +34,10 @@ header {
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         padding-top: 1rem;
-        justify-content: space-between;
-        margin: 1rem;
+        justify-content: space-around;
+        margin-top: 1rem;
         position: fixed;
         top: 0;
         z-index: 1000;
@@ -52,10 +57,14 @@ header {
         display: flex;
         flex-direction: row;
         gap: 5rem;
-        margin-left: 17rem;
+
 }
 
 .nav_item {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
         transition: 0.5s ease-in-out;
 }
 
@@ -65,7 +74,6 @@ header {
 
 .logo {
         width: 6rem;
-        margin-left: 7rem;
 }
 
 ul {
@@ -88,10 +96,152 @@ i {
         font-size: 1.1rem;
 }
 
-i:hover {
+.night_btn:hover {
         cursor: pointer;
 }
 
-.fa-moon {
-        margin-right: 7.5rem;
+.night_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+}
+
+.night_btn p {
+        font-size: 0.7rem;
+}
+
+.night_btn i {
+        font-size: 1.5rem;
+}
+
+.menu_btn {
+        display: none;
+        padding: 1rem;
+}
+
+.menu_btn:hover {
+        cursor: pointer;
+}
+
+.toogle_menu {
+        display: none;
+}
+
+
+@media (max-width: 867px) {
+        .nav_container {
+                margin: 0;
+                padding: 0.5rem;
+        }
+
+        .logo {
+                width: 5rem;
+        }
+
+        .nav_list {
+                gap: 3rem;
+        }
+}
+
+@media (max-width: 700px) {
+        .nav_list {
+                gap: 1rem;
+        }
+}
+
+@media (max-width: 600px) {
+        .nav_item {
+                flex-direction: column;
+        }
+}
+
+@media (max-width: 501px) {
+        .menu_btn {
+                display: flex;
+        }
+
+        .nav_container {
+                padding: 0.2rem;
+        }
+
+        .nav_list {
+                display: none;
+        }
+
+        .night_btn {
+                margin-left: 10rem;
+                font-size: 0.5rem;
+        }
+
+        .night_btn i {
+                font-size: 1rem;
+        }
+
+        .logo {
+                width: 4rem;
+        }
+
+        .toogle_menu {
+                display: flex;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+                z-index: 10000;
+                right: -100vw;
+                height: 100vh;
+                width: 90vw;
+                color: #000000;
+                background-color: white;
+                transition: right 1s ease-in-out;
+                overflow: hidden;
+        }
+
+        .show {
+                right: 0;
+        }
+
+        .toogle_list {
+                margin-bottom: 17rem;
+        }
+
+        .toogle_item {
+                padding: 2rem 5rem;
+                width: 90vw;
+        }
+
+        .toogle_item:hover {
+                cursor: pointer;
+                background-color: rgb(221, 221, 221);
+        }
+
+        .toogle_item a {
+                color: #000000;
+        }
+
+        .toogle_item i {
+                color: #000000;
+        }
+
+        .fa-xmark {
+                color: #000000;
+                position: absolute;
+                z-index: 10000001;
+                top: 0;
+                right: 0;
+                margin-top: 1rem;
+                margin-right: 1rem;
+                padding: 1rem;
+        }
+
+        .fa-xmark:hover {
+                cursor: pointer;
+                color: #3b3b3b;
+        }
+}
+
+@media (max-width: 365px){
+        .toogle_menu{
+                width: 100vw;
+        }
 }
