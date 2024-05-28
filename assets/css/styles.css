@@ -14,71 +14,84 @@
         font-family: "Montserrat Alternates", sans-serif;
 }
 
-html{
+html {
         scroll-behavior: smooth;
 }
 
-header{
-        background-image: url('../images/couverture/light/light\ couverture\ 2.jpg');
+header {
+        background-image: url('../images/couverture/light/light\ couverture\ 4.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
 }
 
-.nav_container{
+.nav_container {
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
+        padding-top: 1rem;
         justify-content: space-between;
-        padding: 0.5rem;
+        margin: 1rem;
         position: fixed;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(0.5px);
+        background-color: transparent;
+        transition: backdrop-filter 0.2s ease, background-color 0.2s ease, margin 0.5s ease;
 }
 
-.nav_list{
+.sticky {
+        top: 0;
+        margin: 0;
+        backdrop-filter: blur(2px);
+}
+
+.nav_list {
         display: flex;
         flex-direction: row;
         gap: 5rem;
         margin-left: 17rem;
 }
 
-.nav_item{
+.nav_item {
         transition: 0.5s ease-in-out;
 }
 
-.nav_item:hover{
+.nav_item:hover {
         letter-spacing: 0.1rem;
 }
 
-.logo{
+.logo {
         width: 6rem;
         margin-left: 7rem;
 }
 
-ul{
+ul {
         list-style: none;
         font-size: 1.1rem;
 }
 
-a{
+a {
         text-decoration: none;
         color: white;
 }
 
-img{
+img {
         max-width: 100%;
         height: auto;
 }
 
-i{
+i {
         color: white;
         font-size: 1.1rem;
 }
 
-i:hover{
+i:hover {
         cursor: pointer;
 }
 
-.fa-moon{
+.fa-moon {
         margin-right: 7.5rem;
 }
