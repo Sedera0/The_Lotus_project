@@ -113,7 +113,7 @@ i {
         flex-direction: column;
         align-items: center;
         color: #434343;
-        
+
 }
 
 .night_btn p {
@@ -249,9 +249,66 @@ i {
         }
 }
 
-@media (max-width: 365px){
-        .toogle_menu{
+@media (max-width: 365px) {
+        .toogle_menu {
                 width: 100vw;
         }
 }
 
+
+/*-------------------------------------------------------------------------- HERO SECTION ----------------------------------------------------------------------------------*/
+.hero {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 8rem;
+}
+
+.left_hero {
+        margin-left: 10rem;
+        width: 40%;
+}
+
+.right_hero {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+}
+
+.right_hero i {
+        color: #333333;
+        font-size: 2rem;
+}
+
+.right_hero i:hover {
+        cursor: pointer;
+        color: #74bc44;
+        padding: 1rem;
+}
+
+.fa-chevron-left:hover {
+        transform: translateX(-25%);
+}
+
+.fa-chevron-right:hover {
+        transform: translateX(25%);
+}
+
+.right_hero img {
+        width: 40rem;
+}
+
+.slide_container {
+        display: flex;
+        transition: transform 0.5s ease;
+}
+
+.slide_container img {
+        min-width: 100%;
+}

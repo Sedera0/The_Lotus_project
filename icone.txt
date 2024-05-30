@@ -14,3 +14,5 @@
 <i class="fa-regular fa-moon"></i> icone pour dark mode
 <i class="fa-regular fa-sun"></i> icone pour light mode
 
+<i class="fa-solid fa-chevron-right"></i> icone next
+<i class="fa-solid fa-chevron-left"></i> iocne preview
