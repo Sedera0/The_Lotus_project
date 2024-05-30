@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function(){
             currentIndex--;
             animation();
         }
-    })
+    });
 
     next.addEventListener('click', function(){
         if(currentIndex < illustration.length - 1) {
             currentIndex++;
             animation();
         }
-    })
+    });
 
-    
+    animation();
 })
