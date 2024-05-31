@@ -29,6 +29,40 @@ header {
         width: auto;
 }
 
+.tree{
+        position: absolute;
+        bottom: 0;
+        object-fit: cover;
+        z-index: -0;
+        width: 10rem;
+}
+
+.tree2{
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        z-index: -0;
+        width: 10rem;
+}
+
+.tree3{
+        position: absolute;
+        top: 0;
+        right: 0;
+        object-fit: cover;
+        z-index: -0;
+        width: 10rem;
+}
+
+.tree4{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: cover;
+        z-index: -0;
+        width: 10rem;
+}
+
 /*-------------------------------------------------------------------------- NAVBAR ------------------------------------------------------------------------*/
 .nav_container {
         display: flex;
@@ -44,7 +78,7 @@ header {
         margin-left: 2rem;
         z-index: 1000;
         backdrop-filter: blur(0.5px);
-        background-color: #F5F5F5;
+        background-color: transparent;
         transition: backdrop-filter 0.2s ease-in-out, background-color 0.2s ease-in-out, margin 0.5s ease-in-out, width 0.5s ease-in-out, left 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
@@ -53,6 +87,7 @@ header {
         top: 0;
         left: 0;
         padding: 1rem 0;
+        background-color: #F5F5F5;
         margin: 0;
         width: 100%;
         backdrop-filter: blur(2px);
@@ -113,7 +148,7 @@ i {
         flex-direction: column;
         align-items: center;
         color: #434343;
-
+        margin-right: 2rem;
 }
 
 .night_btn p {
@@ -264,6 +299,7 @@ i {
         align-items: center;
         justify-content: center;
         padding-top: 8rem;
+        z-index: 100;
 }
 
 .left_hero {
@@ -271,7 +307,7 @@ i {
         width: 40%;
         display: flex;
         flex-direction: column;
-        gap: 8rem;
+        gap: 5rem;
 }
 
 .description {
@@ -300,7 +336,7 @@ button {
         flex-direction: row;
         align-items: center;
         gap: 0.5rem;
-        background-color: #f46cfc;
+        background-color: #434343;
         border-radius: 30px;
         padding: 1rem 1.5rem;
         font-weight: 500;
@@ -328,11 +364,12 @@ button {
 
 .demo_btn i {
         font-size: 1.5rem;
+        color: #434343;
 }
 
 .demo_btn a {
         font-weight: 500;
-        color: #74bc44;
+        color: #434343;
 }
 
 .demo_btn a:hover {
@@ -342,8 +379,7 @@ button {
 .socials {
         display: flex;
         flex-direction: row;
-        gap: 2rem;
-        justify-content: center;
+        gap: 1.5rem;
 }
 
 .socials i {
@@ -356,35 +392,35 @@ button {
 
 @keyframes changeColor {
         0% {
-                color: #f46cfc;
+                color: #F5F5F5;
         }
 
         /* Couleur de départ */
         50% {
-                color: #74bc44;
+                color: #434343;
         }
 
         /* Nouvelle couleur */
         100% {
-                color: #f46cfc;
+                color: #F5F5F5;
         }
 
 }
 
 .socials i:nth-child(1) {
-        animation: changeColor 3s infinite 0s;
+        animation: changeColor 4s infinite 0s;
 }
 
 .socials i:nth-child(2) {
-        animation: changeColor 3s infinite 0.5s;
+        animation: changeColor 4s infinite 1s;
 }
 
 .socials i:nth-child(3) {
-        animation: changeColor 3s infinite 1s;
+        animation: changeColor 4s infinite 2s;
 }
 
 .socials i:nth-child(4) {
-        animation: changeColor 3s infinite 1.5s;
+        animation: changeColor 4s infinite 3s;
 }
 
 .right_hero {
