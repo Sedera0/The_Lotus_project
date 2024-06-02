@@ -139,11 +139,15 @@ i {
 }
 
 
-.night_btn:hover {
+.info_btn:hover {
         cursor: pointer;
 }
 
-.night_btn {
+.fa-sun {
+        display: none;
+}
+
+.info_btn {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -151,11 +155,11 @@ i {
         margin-right: 2rem;
 }
 
-.night_btn p {
+.info_btn p {
         font-size: 0.7rem;
 }
 
-.night_btn i {
+.info_btn i {
         font-size: 1.5rem;
 }
 
@@ -173,9 +177,22 @@ i {
 }
 
 /*-------------------------------------------------------------------------- RESPONSIVE NAVBAR ----------------------------------------------------------------------------------*/
+
+@media (max-width: 1421px) {
+        .nav_container {
+                position: fixed;
+                width: 100%;
+                left: 0;
+                top: 0;
+                background-color: #F5F5F5;
+                margin: 0;
+                backdrop-filter: blur(2px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+}
+
 @media (max-width: 867px) {
         .nav_container {
-                margin: 0;
                 padding: 0.5rem;
         }
 
@@ -207,23 +224,21 @@ i {
 
         .nav_container {
                 padding: 0.2rem;
+                justify-content: space-between;
         }
 
         .nav_list {
                 display: none;
         }
 
-        .night_btn {
-                margin-left: 10rem;
-                font-size: 0.5rem;
+        .info_btn {
+                display: none;
         }
 
-        .night_btn i {
-                font-size: 1rem;
-        }
 
         .logo {
                 width: 4rem;
+                margin: 0 1rem;
         }
 
         .toogle_menu {
@@ -232,21 +247,22 @@ i {
                 justify-content: center;
                 align-items: center;
                 z-index: 10000;
-                right: -100vw;
-                height: 100vh;
-                width: 90vw;
+                height: 90vh;
+                width: 100vw;
                 color: #333333;
                 background-color: #F5F5F5;
-                transition: right 1s ease-in-out;
+                transition: transform 0.3s ease;
                 overflow: hidden;
+                transform: translateY(-100%);
         }
 
         .show {
-                right: 0;
+                transform: translateY(0);
         }
 
+
         .toogle_list {
-                margin-bottom: 17rem;
+                margin-bottom: 5rem;
         }
 
         .toogle_item {
@@ -465,52 +481,4 @@ button {
         display: flex;
         transition: transform 0.5s ease;
         width: 100vw;
-}
-
-/*-----------------------------------------------------------------------HEADER DARK MODE--------------------------------------------------------------------------------------*/
-body.dark-mode {
-        background-color: #434343;
-        color: #F5F5F5;
-}
-
-body.dark-mode header {
-        background-image: url(../images/couverture/dark/blue\ dark\ couveture.jpg);
-}
-
-body.dark-mode .nav_container {
-        background-color: #434343;
-}
-
-body.dark-mode .nav_item a {
-        color: #F5F5F5;
-}
-
-body.dark-mode .reservation_btn {
-        background-color: #F5F5F5;
-        color: #434343;
-}
-
-body.dark-mode .demo_btn a {
-        color: #F5F5F5;
-}
-
-body.dark-mode .social i {
-        color: #F5F5F5;
-}
-
-body.dark-mode .right_hero i {
-        color: #F5F5F5;
-}
-
-body.dark-mode .toogle_menu {
-        background-color: #434343;
-        color: #F5F5F5;
-}
-
-body.dark-mode .toogle_item a {
-        color: #F5F5F5;
-}
-
-body.dark-mode .fa-xmark {
-        color: #F5F5F5;
 }

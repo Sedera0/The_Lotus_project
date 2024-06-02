@@ -19,3 +19,5 @@
 
 <i class="fa-solid fa-arrow-right"></i> Button
 <i class="fa-regular fa-circle-play"></i> demo Button
+
+<i class="fa-solid fa-circle-info"></i> info
