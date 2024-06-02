@@ -205,17 +205,18 @@ i {
         }
 }
 
+@media (max-width: 730px) {
+        .nav_item {
+                flex-direction: column;
+        }
+}
+
 @media (max-width: 700px) {
         .nav_list {
                 gap: 1rem;
         }
 }
 
-@media (max-width: 600px) {
-        .nav_item {
-                flex-direction: column;
-        }
-}
 
 @media (max-width: 501px) {
         .menu_btn {
@@ -247,22 +248,16 @@ i {
                 justify-content: center;
                 align-items: center;
                 z-index: 10000;
-                height: 90vh;
+                height: 100vh;
                 width: 100vw;
                 color: #333333;
                 background-color: #F5F5F5;
                 transition: transform 0.3s ease;
-                overflow: hidden;
                 transform: translateY(-100%);
         }
 
         .show {
                 transform: translateY(0);
-        }
-
-
-        .toogle_list {
-                margin-bottom: 5rem;
         }
 
         .toogle_item {
@@ -481,4 +476,121 @@ button {
         display: flex;
         transition: transform 0.5s ease;
         width: 100vw;
+}
+
+/*--------------------------------------------------------------------------------------------RESPONSIVE HERO------------------------------------------------------------------------------------*/
+@media (max-width: 1400px) {
+        .hero {
+                padding-top: 9rem;
+        }
+        
+}
+@media (max-width: 1300px) {
+        .hero {
+                padding-top: 10rem;
+        }
+        
+} 
+
+
+@media (max-width: 1200px) {
+        .hero {
+                padding-top: 11rem;
+        }
+        .left_hero {
+                margin-left: 5rem;
+        }
+
+        .reservation_btn {
+                text-align: center;
+        }
+        .choice {
+                gap: 1rem;
+        }
+}
+
+@media (max-width: 1100px) {
+        .hero {
+                padding-top: 12rem;
+        }
+        
+} 
+
+
+@media (max-width: 1000px) {
+        .hero {
+                padding-top: 13rem;
+        }
+        .social {
+                justify-content: center;
+        }
+
+}
+
+@media (max-width: 900px) {
+        .hero {
+                margin-top: -2rem;
+                flex-direction: column-reverse;
+                height: 100%;
+                padding-bottom: 2rem;
+                padding-top: 5rem;
+        }
+
+        .illustration img {
+                width: 20rem;
+        }
+
+        .choice {
+                justify-content: center;
+        }
+
+        .left_hero {
+                justify-content: center;
+                gap: 2rem;
+                align-items: center;
+                text-align: center;
+                object-fit: cover;
+                margin: 0;
+                height: auto;
+                width: 40rem;
+        }
+}
+
+@media (max-width: 800px) {
+        .left_hero {
+                width: 30rem;
+        }
+}
+
+@media (max-width: 600px) {
+        .left_hero {
+                width: 25rem;
+        }
+}
+
+@media (max-width: 500px) {
+        .left_hero {
+                width: 20rem;
+        }
+
+        .social {
+                gap: 1rem;
+        }
+}
+@media (max-width: 360px) {
+        .hero{
+                margin-top: 2rem;
+        }
+        .left_hero {
+                width: 15rem;
+        }
+        .choice {
+                flex-direction: column;
+        }
+        .reservation_btn{
+                justify-content: center;
+        }
+        .social {
+                flex-direction: column;
+        }
 }
