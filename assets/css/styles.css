@@ -29,7 +29,7 @@ header {
         width: auto;
 }
 
-.tree{
+.tree {
         position: absolute;
         bottom: 0;
         object-fit: cover;
@@ -37,7 +37,7 @@ header {
         width: 10rem;
 }
 
-.tree2{
+.tree2 {
         position: absolute;
         top: 0;
         object-fit: cover;
@@ -45,7 +45,7 @@ header {
         width: 10rem;
 }
 
-.tree3{
+.tree3 {
         position: absolute;
         top: 0;
         right: 0;
@@ -54,7 +54,7 @@ header {
         width: 10rem;
 }
 
-.tree4{
+.tree4 {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -376,18 +376,16 @@ button {
         text-decoration: underline;
 }
 
-.socials {
+.social {
         display: flex;
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 2rem;
 }
 
-.socials i {
-        font-size: 1.7rem;
-}
-
-.socials i:hover {
-        cursor: pointer;
+.social i {
+        font-size: 1.5rem;
+        color: #434343;
+        transition: 0.5s ease;
 }
 
 @keyframes changeColor {
@@ -395,33 +393,31 @@ button {
                 color: #F5F5F5;
         }
 
-        /* Couleur de départ */
         50% {
                 color: #434343;
         }
 
-        /* Nouvelle couleur */
         100% {
                 color: #F5F5F5;
         }
-
 }
 
-.socials i:nth-child(1) {
-        animation: changeColor 4s infinite 0s;
+.social i:nth-child(1) {
+        animation: changeColor 3s infinite 0s;
 }
 
-.socials i:nth-child(2) {
-        animation: changeColor 4s infinite 1s;
+.social i:nth-child(2) {
+        animation: changeColor 3s infinite 0.5s;
 }
 
-.socials i:nth-child(3) {
-        animation: changeColor 4s infinite 2s;
+.social i:nth-child(3) {
+        animation: changeColor 3s infinite 1s;
 }
 
-.socials i:nth-child(4) {
-        animation: changeColor 4s infinite 3s;
+.social i:nth-child(4) {
+        animation: changeColor 3s infinite 1.5s;
 }
+
 
 .right_hero {
         width: 65%;
@@ -469,4 +465,52 @@ button {
         display: flex;
         transition: transform 0.5s ease;
         width: 100vw;
+}
+
+/*-----------------------------------------------------------------------HEADER DARK MODE--------------------------------------------------------------------------------------*/
+body.dark-mode {
+        background-color: #434343;
+        color: #F5F5F5;
+}
+
+body.dark-mode header {
+        background-image: url(../images/couverture/dark/blue\ dark\ couveture.jpg);
+}
+
+body.dark-mode .nav_container {
+        background-color: #434343;
+}
+
+body.dark-mode .nav_item a {
+        color: #F5F5F5;
+}
+
+body.dark-mode .reservation_btn {
+        background-color: #F5F5F5;
+        color: #434343;
+}
+
+body.dark-mode .demo_btn a {
+        color: #F5F5F5;
+}
+
+body.dark-mode .social i {
+        color: #F5F5F5;
+}
+
+body.dark-mode .right_hero i {
+        color: #F5F5F5;
+}
+
+body.dark-mode .toogle_menu {
+        background-color: #434343;
+        color: #F5F5F5;
+}
+
+body.dark-mode .toogle_item a {
+        color: #F5F5F5;
+}
+
+body.dark-mode .fa-xmark {
+        color: #F5F5F5;
 }
