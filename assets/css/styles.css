@@ -781,7 +781,7 @@ button {
 }
 
 .plat1 img:hover {
-        transform: rotate(-180deg);
+        transform: rotate(180deg);
 }
 
 .plat2 img:hover {
@@ -789,5 +789,5 @@ button {
 }
 
 .plat3 img:hover {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
 }
