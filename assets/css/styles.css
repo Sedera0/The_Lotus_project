@@ -1024,6 +1024,8 @@ button {
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
 }
 .reservation{
         display: flex;
@@ -1057,6 +1059,7 @@ button {
         justify-content: center;
         width: 45%;
         gap: 1rem;
+        margin: 2rem;
 }
 
 .reservation-form{
@@ -1154,3 +1157,54 @@ button {
         font-size: 1.2rem;
         color: rgb(30, 30, 255);
 }
+
+/*---------------------------------------------------------------------------------------------- RESPONSIVE RESERVATION SECTION ------------------------------------------------------------------*/
+@media (max-width: 1500px) {
+        .reservation{
+                margin: 5rem 1rem;
+        }
+}
+
+@media (max-width: 1330px) {
+        .right_reservation{
+                display: flex;
+                height: auto;
+                width: auto;
+        }
+        
+        .right_reservation img{
+                object-fit: cover;
+                height: auto;
+                width: auto;
+        }
+        .left_reservation{
+                width: auto;
+        }
+}
+
+@media (max-width: 1110px) {
+        .reservation{
+                flex-direction: column;
+                width: 30rem;
+                justify-content: center;
+                align-items: center;
+                margin: 2rem;
+        }
+        .right_reservation img{
+                border-radius: 10px 10px 0 0px;
+
+        }
+}
+
+@media (max-width:  510px) {
+        .reservation{
+                width: 25rem;
+        }
+}
+
+@media (max-width:  400px) {
+        .reservation{
+                width: 20rem;
+        }
+}
+
