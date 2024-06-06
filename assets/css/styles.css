@@ -1020,14 +1020,15 @@ button {
 }
 
 /*--------------------------------------------------------------------------------------RESERVATION SECTION---------------------------------------------------------------------------------------------------------*/
-.reserve{
+.reserve {
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
 }
-.reservation{
+
+.reservation {
         display: flex;
         flex-direction: row;
         margin: 5rem 10rem;
@@ -1039,14 +1040,14 @@ button {
         border-radius: 20px;
 }
 
-.right_reservation{
+.right_reservation {
         display: flex;
         height: 100%;
         width: 50rem;
         object-fit: cover;
 }
 
-.right_reservation img{
+.right_reservation img {
         border-radius: 10px 0 0 10px;
         object-fit: cover;
         height: 100%;
@@ -1054,7 +1055,7 @@ button {
         bottom: 0;
 }
 
-.left_reservation{
+.left_reservation {
         display: flex;
         justify-content: center;
         width: 45%;
@@ -1062,24 +1063,24 @@ button {
         margin: 2rem;
 }
 
-.reservation-form{
+.reservation-form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
 }
 
-.reservation h3{
+.reservation h3 {
         font-size: 1.5rem;
 }
 
-.form{
+.form {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
 }
 
-.champ{
+.champ {
         display: flex;
         flex-direction: row;
         padding: 1rem 7rem 1rem 1rem;
@@ -1090,19 +1091,19 @@ button {
         text-align: left;
 }
 
-.champ input{
+.champ input {
         border: none;
         background-color: transparent;
         outline: none;
-        
+
 }
 
-.champ i{
+.champ i {
         color: #434343;
         text-align: left;
 }
 
-.make-reservation-btn{
+.make-reservation-btn {
         border: none;
         background-color: #74bc44;
         padding: 1rem;
@@ -1113,12 +1114,12 @@ button {
         transition: background-color 0.3s ease-in-out;
 }
 
-.make-reservation-btn:hover{
+.make-reservation-btn:hover {
         cursor: pointer;
         background-color: #65a13d;
 }
 
-.reservation_option{
+.reservation_option {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -1126,7 +1127,7 @@ button {
         align-items: center;
 }
 
-.option{
+.option {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1140,77 +1141,80 @@ button {
         align-items: center;
 }
 
-.option p{
+.option p {
         font-size: 0.8rem;
         font-weight: 500;
 }
-.option:hover{
+
+.option:hover {
         background-color: #d0cfcf;
         cursor: pointer;
 }
 
-.google img{
+.google img {
         width: 1.3rem;
 }
 
-.facebook i{
+.facebook i {
         font-size: 1.2rem;
         color: rgb(30, 30, 255);
 }
 
 /*---------------------------------------------------------------------------------------------- RESPONSIVE RESERVATION SECTION ------------------------------------------------------------------*/
 @media (max-width: 1500px) {
-        .reservation{
+        .reservation {
                 margin: 5rem 1rem;
         }
 }
 
 @media (max-width: 1330px) {
-        .right_reservation{
+        .right_reservation {
                 display: flex;
                 height: auto;
                 width: auto;
         }
-        
-        .right_reservation img{
+
+        .right_reservation img {
                 object-fit: cover;
                 height: auto;
                 width: auto;
         }
-        .left_reservation{
+
+        .left_reservation {
                 width: auto;
         }
 }
 
 @media (max-width: 1110px) {
-        .reservation{
+        .reservation {
                 flex-direction: column;
                 width: 30rem;
                 justify-content: center;
                 align-items: center;
                 margin: 2rem;
         }
-        .right_reservation img{
+
+        .right_reservation img {
                 border-radius: 10px 10px 0 0px;
 
         }
 }
 
-@media (max-width:  510px) {
-        .reservation{
+@media (max-width: 510px) {
+        .reservation {
                 width: 25rem;
         }
 }
 
-@media (max-width:  400px) {
-        .reservation{
+@media (max-width: 400px) {
+        .reservation {
                 width: 20rem;
         }
 }
 
 /*-------------------------------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------------------------*/
-.contact{
-        width: 100%;
+.contact {
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -1220,64 +1224,94 @@ button {
         color: #F5F5F5;
 }
 
-.contact i{
+.contact i {
         color: #f46cfc;
 }
 
-.contact a{
+.contact a {
         color: #74bc44;
 }
 
-.footer_left img{
+.footer_left img {
         width: 6rem;
 }
 
-.footer_left{
+.footer_left {
         margin: 2rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
 }
 
-.footer_links{
+.footer_links {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
 }
 
-.footer_links a:hover{
+.footer_links a:hover {
         color: #233815;
 }
 
-.right{
+.right {
         font-size: 0.8rem;
 }
 
-.footer_center{
+.footer_center {
         margin: 2rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
 }
 
-.location{
+.location {
         display: flex;
         flex-direction: column;
 }
 
-.footer_right{
+.mail {
+        display: flex;
+        flex-direction: column;
+}
+
+.footer_right {
         margin: 2rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
 }
 
-.about_service{
+.about_service {
         display: flex;
         flex-direction: column;
         gap: 1rem;
 }
 
-.about_service span{
+.about_service span {
         color: #74bc44;
+}
+
+/*-------------------------------------------------------------------------------------------- RESPONSIVE FOOTER --------------------------------------------------------------------------------------*/
+@media (max-width: 1150px) {
+        .contact {
+                gap: 1rem;
+        }
+}
+
+@media (max-width: 1000px) {
+        .contact {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+        }
+}
+
+@media (max-width: 400px) {
+        .footer_links {
+                flex-direction: column;
+        }
+        .footer_left, .footer_center, .footer_right{
+                margin: 1rem;
+        }
 }
