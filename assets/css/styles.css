@@ -1208,3 +1208,76 @@ button {
         }
 }
 
+/*-------------------------------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------------------------*/
+.contact{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        border-radius: 40px 0 0 0;
+        background-color: #333333;
+        color: #F5F5F5;
+}
+
+.contact i{
+        color: #f46cfc;
+}
+
+.contact a{
+        color: #74bc44;
+}
+
+.footer_left img{
+        width: 6rem;
+}
+
+.footer_left{
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.footer_links{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+}
+
+.footer_links a:hover{
+        color: #233815;
+}
+
+.right{
+        font-size: 0.8rem;
+}
+
+.footer_center{
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.location{
+        display: flex;
+        flex-direction: column;
+}
+
+.footer_right{
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.about_service{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.about_service span{
+        color: #74bc44;
+}
