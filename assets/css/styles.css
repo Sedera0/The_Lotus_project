@@ -753,7 +753,7 @@ button {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 5rem;
+        gap: 10rem;
 }
 
 .bottom_plats img {
@@ -764,21 +764,27 @@ button {
 .plat-container {
         position: relative;
         padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
 }
 
 .plat1 {
-        transition: transform 1s ease, opacity 1s ease;
+        transition: transform 1s ease, scale 1s ease;
         padding-bottom: 10rem;
+        z-index: 1;
 }
 
 .plat2 {
         padding-top: 10rem;
-        transition: transform 1s ease, opacity 1s ease;
+        transition: transform 1s ease, scale 1s ease;
+        z-index: 1;
 }
 
 .plat3 {
         padding-bottom: 10rem;
-        transition: transform 1s ease, opacity 1s ease;
+        transition: transform 1s ease, scale 1s ease;
+        z-index: 1;
 }
 
 .plat1 img:hover {
@@ -793,6 +799,59 @@ button {
         transform: rotate(-180deg);
 }
 
+.leaf1 {
+        position: absolute;
+        margin-left: 10rem;
+        margin-bottom: 20rem;
+        bottom: 0;
+        left: 0;
+        width: 10rem;
+}
+
+.falling1 {
+        position: absolute;
+        margin-left: 1rem;
+        margin-bottom: 10rem;
+        bottom: 0;
+        left: 0;
+        width: 30rem;
+}
+
+.leaf2 {
+        position: absolute;
+        margin-left: 36rem;
+        margin-bottom: 10rem;
+        bottom: 0;
+        left: 0;
+        width: 10rem;
+}
+
+.falling2 {
+        position: absolute;
+        margin-left: 26rem;
+        margin-bottom: 1rem;
+        bottom: 0;
+        left: 0;
+        width: 30rem;
+}
+
+.leaf3 {
+        position: absolute;
+        margin-right: 10rem;
+        margin-bottom: 20rem;
+        bottom: 0;
+        right: 0;
+        width: 10rem;
+}
+
+.falling3 {
+        position: absolute;
+        margin-bottom: 11rem;
+        bottom: 0;
+        right: 0;
+        width: 30rem;
+}
+
 /*----------------------------------------------------------------------RESPONSIVE PLATS SECTION---------------------------------------------------------------------------*/
 @media (max-width: 1311px) {
         .all_plats {
@@ -801,6 +860,28 @@ button {
 
         .top_plats {
                 gap: 1rem;
+        }
+
+        .falling1 {
+                margin-left: -1rem;
+        }
+
+        .leaf1 {
+                margin-left: 9rem;
+        }
+
+        .falling2 {
+                margin-left: 24rem;
+                margin-bottom: 1rem;
+        }
+
+        .leaf2 {
+                margin-left: 35rem;
+        }
+
+        .falling3 {
+                margin-right: -1rem;
+                margin-bottom: 10rem;
         }
 }
 
@@ -811,6 +892,36 @@ button {
 
         .ingredient h5 {
                 margin-left: 5rem;
+        }
+
+        .bottom_plats {
+                gap: 4rem;
+        }
+
+        .falling1 {
+                margin-left: -3rem;
+        }
+
+        .leaf1 {
+                margin-left: 7rem;
+        }
+
+        .falling2 {
+                margin-left: 17rem;
+                margin-bottom: 1rem;
+        }
+
+        .leaf2 {
+                margin-left: 26rem;
+        }
+
+        .falling3 {
+                margin-right: -4rem;
+                margin-bottom: 10rem;
+        }
+
+        .leaf3 {
+                margin-right: 7rem;
         }
 }
 
@@ -837,6 +948,73 @@ button {
         .plat2 {
                 padding: 0;
         }
+
+        .falling1 {
+                margin-left: 1.5rem;
+                margin-bottom: 38rem;
+
+        }
+
+        .leaf1 {
+                margin-left: 12rem;
+                margin-bottom: 48rem;
+
+        }
+
+        .falling2 {
+                margin-left: 1.5rem;
+                margin-bottom: 20rem;
+        }
+
+        .leaf2 {
+                margin-left: 12rem;
+                margin-bottom: 28rem;
+        }
+
+        .falling3 {
+                margin-right: 2rem;
+                margin-bottom: 0rem;
+        }
+        
+        .leaf3 {
+                margin-right: 12rem;
+                margin-bottom: 9rem;
+
+        }
+}
+
+@media (max-width: 551px) {
+        .falling1 {
+                display: none;
+                
+        }
+        
+        .leaf1 {
+                display: none;
+                
+                
+        }
+        
+        .falling2 {
+                display: none;
+                
+        }
+        
+        .leaf2 {
+                display: none;
+                
+        }
+        
+        .falling3 {
+                display: none;
+                
+        }
+        
+        .leaf3 {
+                display: none;
+            
+
+        }
 }
 
 @media (max-width: 450px) {
@@ -851,4 +1029,5 @@ button {
         .but {
                 margin: 1rem;
         }
+       
 }
