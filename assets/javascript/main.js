@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const showBtn = document.getElementById('menu_btn');
     const menu = document.getElementById('toogle_menu');
     const closeBtn = document.getElementById('close_menu');
-    const liens = document.querySelectorAll('.toogle_list i')
+    const liens = document.querySelectorAll('.nav_link');
+
     showBtn.addEventListener('click', function () {
         menu.classList.add('show');
     });
