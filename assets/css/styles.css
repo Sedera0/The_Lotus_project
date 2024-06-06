@@ -244,11 +244,11 @@ i {
 
         .toogle_menu {
                 display: flex;
-                position: absolute;
+                position: fixed;
                 justify-content: center;
                 align-items: center;
                 z-index: 10000;
-                height: 100vh;
+                height: 100%;
                 width: 100vw;
                 color: #333333;
                 background-color: #F5F5F5;
@@ -262,7 +262,7 @@ i {
 
         .toogle_item {
                 padding: 2rem 5rem;
-                width: 90vw;
+                width: 100vw;
         }
 
         .toogle_item:hover {
@@ -284,7 +284,7 @@ i {
                 z-index: 10000001;
                 top: 0;
                 right: 0;
-                margin-top: 1rem;
+                margin-top: 3rem;
                 margin-right: 1rem;
                 padding: 1rem;
         }
@@ -614,13 +614,14 @@ button {
         text-align: center;
         align-items: center;
         gap: 2rem;
+        width: 100vw;
 }
 
 .plats_text {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        padding-top: 3rem;
+        padding-top: 5rem;
 }
 
 .plats_text h2 {
@@ -790,4 +791,64 @@ button {
 
 .plat3 img:hover {
         transform: rotate(-180deg);
+}
+
+/*----------------------------------------------------------------------RESPONSIVE PLATS SECTION---------------------------------------------------------------------------*/
+@media (max-width: 1311px) {
+        .all_plats {
+                padding: 2rem 0;
+        }
+
+        .top_plats {
+                gap: 1rem;
+        }
+}
+
+@media (max-width: 1241px) {
+        .top {
+                width: 20rem;
+        }
+
+        .ingredient h5 {
+                margin-left: 5rem;
+        }
+}
+
+@media (max-width: 1001px) {
+        .top_plats {
+                flex-direction: column;
+        }
+
+        .top {
+                width: 25rem;
+        }
+
+        .ingredient h5 {
+                margin-left: 8rem;
+        }
+
+        .bottom_plats {
+                flex-direction: column;
+                gap: 2rem;
+        }
+
+        .plat3,
+        .plat1,
+        .plat2 {
+                padding: 0;
+        }
+}
+
+@media (max-width: 450px) {
+        .top {
+                width: 20rem;
+        }
+
+        .ingredient h5 {
+                margin-left: 5.5rem;
+        }
+
+        .but {
+                margin: 1rem;
+        }
 }
