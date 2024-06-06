@@ -952,13 +952,11 @@ button {
         .falling1 {
                 margin-left: 1.5rem;
                 margin-bottom: 38rem;
-
         }
 
         .leaf1 {
                 margin-left: 12rem;
                 margin-bottom: 48rem;
-
         }
 
         .falling2 {
@@ -975,45 +973,36 @@ button {
                 margin-right: 2rem;
                 margin-bottom: 0rem;
         }
-        
+
         .leaf3 {
                 margin-right: 12rem;
                 margin-bottom: 9rem;
-
         }
 }
 
 @media (max-width: 551px) {
         .falling1 {
                 display: none;
-                
         }
-        
+
         .leaf1 {
                 display: none;
-                
-                
         }
-        
+
         .falling2 {
                 display: none;
-                
         }
-        
+
         .leaf2 {
                 display: none;
-                
         }
-        
+
         .falling3 {
                 display: none;
-                
         }
-        
+
         .leaf3 {
                 display: none;
-            
-
         }
 }
 
@@ -1029,5 +1018,7 @@ button {
         .but {
                 margin: 1rem;
         }
-       
+
 }
+
+/*--------------------------------------------------------------------------------------RESERVATION SECTION---------------------------------------------------------------------------------------------------------*/
