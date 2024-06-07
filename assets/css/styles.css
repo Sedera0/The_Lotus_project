@@ -604,6 +604,30 @@ button {
 }
 
 /*-------------------------------------------------------------------------------------------------BUNGALOW SECTION---------------------------------------------------------------------------------------*/
+.bungalow {
+        transform: scale(0);
+        opacity: 0;
+        height: auto;
+}
+
+.bungalow.visible {
+        animation: scaling 1s ease;
+        transform: scale(1);
+        opacity: 1;
+}
+
+@keyframes scaling {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+    
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
 .bung {
         height: 80vh;
         font-family: sans-serif;
@@ -717,6 +741,7 @@ button {
                 gap: 2rem;
                 height: auto;
         }
+
         .info h3 {
                 margin: 0.2rem;
         }
@@ -735,14 +760,16 @@ button {
         .card-container {
                 width: 20rem;
         }
-        
+
 }
+
 @media screen and (max-width: 350px) {
         .card-container {
                 width: 15rem;
         }
-        
+
 }
+
 /*-------------------------------------------------------------------------------------------------PLATS SECTION---------------------------------------------------------------------------------------*/
 .plats {
         height: auto;
@@ -753,6 +780,15 @@ button {
         align-items: center;
         gap: 2rem;
         width: 100vw;
+        transform: scale(0);
+        opacity: 0;
+}
+
+
+.plats.visible {
+        animation: scaling 1s ease;
+        transform: scale(1);
+        opacity: 1;
 }
 
 .plats_text {
@@ -1166,6 +1202,16 @@ button {
         text-align: center;
         justify-content: center;
         align-items: center;
+        transform: scale(0);
+        opacity: 0;
+        height: auto;
+}
+
+
+.reserve.visible {
+        animation: scaling 1s ease;
+        transform: scale(1);
+        opacity: 1;
 }
 
 .reservation {
@@ -1360,6 +1406,15 @@ button {
         align-items: center;
         text-align: center;
         height: auto;
+        transform: scale(0);
+        opacity: 0;
+}
+
+
+.about.visible {
+        animation: scaling 1s ease;
+        transform: scale(1);
+        opacity: 1;
 }
 
 .video {

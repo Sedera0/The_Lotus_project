@@ -81,3 +81,42 @@ carousels.forEach(carousel => {
     });
   });
 })
+
+//Scale effect
+function isVisible(section) {
+    const screen = section.getBoundingClientRect();
+    return screen.top < window.innerHeight + 100;
+}
+
+let isAnimateBungalow = false;
+let isAnimatePlats = false;
+let isAnimateReservation = false;
+let isAnimateAbout = false;
+
+window.addEventListener("scroll", function () {
+    const bungalowSection = document.querySelector(".bungalow");
+    const platsSection = document.querySelector(".plats");
+    const reservationSection = document.querySelector(".reserve");
+    const aboutSection = document.querySelector('.about')
+
+    if (isVisible(bungalowSection) && !isAnimateBungalow) {
+        bungalowSection.classList.add("visible");
+        isAnimateBungalow = true;
+    }
+
+    if (isVisible(platsSection) && !isAnimatePlats) {
+        platsSection.classList.add("visible");
+        
+        isAnimatePlats = true;
+    }
+
+    if (isVisible(reservationSection) && !isAnimateReservation) {
+        reservationSection.classList.add("visible");
+        isAnimateReservation = true;
+    }
+
+    if (isVisible(aboutSection) && !isAnimateAbout) {
+        aboutSection.classList.add("visible");
+        isAnimateAbout = true;
+    }
+});
