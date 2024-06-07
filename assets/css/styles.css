@@ -603,6 +603,146 @@ button {
         }
 }
 
+/*-------------------------------------------------------------------------------------------------BUNGALOW SECTION---------------------------------------------------------------------------------------*/
+.bung {
+        height: 80vh;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+}
+
+.bungalow_text {
+        text-align: center;
+}
+
+.card-container {
+        position: relative;
+        height: 50vh;
+        width: 25%;
+        background: grey;
+        overflow: hidden;
+        border-radius: 20px;
+}
+
+.carousel {
+        height: 100%;
+        background: #EEE;
+        z-index: 9;
+}
+
+.about_room {
+        position: absolute;
+        width: 100%;
+        height: 5vh;
+        z-index: 11;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+}
+
+.about_room img {
+        max-width: 1.2rem;
+}
+
+.info {
+        width: 100%;
+        height: 30%;
+        background-color: #bebdbdcc;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+}
+
+.info h3 {
+
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+
+.resa {
+        border: 1px solid #434343;
+        padding: 0.5rem;
+        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.resa:hover {
+        background-color: #434343;
+        color: #F5F5F5;
+        cursor: pointer;
+}
+
+.carousel-cell {
+        height: 100%;
+        margin-right: 20px;
+        overflow: hidden;
+        object-fit: cover;
+}
+
+.carousel-cell img {
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        bottom: 0;
+}
+
+.flickity-page-dots {
+        top: 10px;
+        height: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------RESOINSIVE BUNGALOW SECTION-------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1310px) {
+        .about_room {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+        }
+
+        .info h3 {
+                margin: 0.5rem;
+        }
+}
+
+@media screen and (max-width: 1000px) {
+        .bung {
+                flex-direction: column;
+                gap: 2rem;
+                height: auto;
+        }
+        .info h3 {
+                margin: 0.2rem;
+        }
+
+        .card-container {
+                display: flex;
+                flex-direction: column;
+                width: 25rem;
+                height: 22rem;
+                border-radius: 15px;
+                overflow: hidden;
+        }
+}
+
+@media screen and (max-width: 482px) {
+        .card-container {
+                width: 20rem;
+        }
+        
+}
+@media screen and (max-width: 350px) {
+        .card-container {
+                width: 15rem;
+        }
+        
+}
 /*-------------------------------------------------------------------------------------------------PLATS SECTION---------------------------------------------------------------------------------------*/
 .plats {
         height: auto;
@@ -1234,7 +1374,7 @@ button {
         border-radius: 30px 0 30px 0;
 }
 
-.about_text{
+.about_text {
         margin: 2rem 5rem;
         padding: 0;
 }
@@ -1245,26 +1385,28 @@ button {
         gap: 1rem;
 }
 
-.describe h4{
+.describe h4 {
         font-size: 1.5rem;
 }
 
 /*-------------------------------------------------------------------------------------------------- RESPONSIVE ABOUT ------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 850px) {
-        .videocontainer video{
+        .videocontainer video {
                 width: 40rem;
         }
-        
-        
+
+
 }
+
 @media screen and (max-width: 660px) {
-        .videocontainer video{
+        .videocontainer video {
                 width: 30rem;
         }
 
 }
+
 @media screen and (max-width: 510px) {
-        .videocontainer video{
+        .videocontainer video {
                 width: 20rem;
         }
 
@@ -1349,13 +1491,13 @@ button {
         color: #74bc44;
 }
 
-.footer_icons{
+.footer_icons {
         display: flex;
         flex-direction: row;
         gap: 1rem;
 }
 
-.footer_icons i{
+.footer_icons i {
         font-size: 1.5rem;
 }
 
@@ -1373,7 +1515,8 @@ button {
                 align-items: center;
                 text-align: center;
         }
-        .footer_icons{
+
+        .footer_icons {
                 justify-content: center;
         }
 }
