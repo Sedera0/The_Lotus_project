@@ -2,3 +2,4 @@ assets/images/couverture/light/light[[:space:]]couverture.psd filter=lfs diff=lf
 assets/images/plats/plat[[:space:]]rond/plats_rond.psd filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 assets/video/LE[[:space:]]LOTUS_FINAL_V1.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/images/lotus[[:space:]]illustration/lotus[[:space:]]illustration.psd filter=lfs diff=lfs merge=lfs -text
